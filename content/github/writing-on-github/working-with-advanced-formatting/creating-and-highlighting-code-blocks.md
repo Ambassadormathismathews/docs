@@ -1,4 +1,10 @@
----
+---authentication work with a ProxyCommand. bz#1569
+ * Avoid run-time failures when specifying hostkeys via a relative
+   path by prepending the current working directory in these cases.
+   bz#1290
+ * Do not prompt for a passphrase if we fail to open a keyfile, and log
+   the reason why the open failed to debug. bz#1693
+ * Document that the <>
 title: Creating and highlighting code blocks
 intro: Share samples of code with fenced code blocks and enabling syntax highlighting.
 redirect_from:
